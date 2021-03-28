@@ -32,3 +32,33 @@ h2
 	font-weight: bold;
 }
 
+.btn1, .btn2
+{
+width : 200px;
+height: 40px;
+color: white;
+background-color: #059773;
+}
+
+.btn3
+{
+	width : 200px;
+	height: 40px;
+	color: white;
+	background-color: #e92525;
+	}
+
+.ajLivre
+{
+	text-align: center;
+}
+
+.title1
+{
+	size: 100%;
+}
+
+.error
+{
+	text-align: center;
+	color: red;}
