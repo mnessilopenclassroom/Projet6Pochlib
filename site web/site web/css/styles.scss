@@ -1,0 +1,236 @@
+
+$primary-color: #059773;
+$second-color: #F54416;
+
+@mixin btn ($color) {
+  color: white;
+  border: 1px ridge black;
+  border-radius: 20px;
+  padding: 10px;
+  opacity: 0.7;
+  background-color: $color;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@mixin message ($color) {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  border-top: 1px ridge $color;
+  border-bottom: 1px ridge $color;
+  color: $color;
+}
+
+
+
+
+@font-face
+{
+    font-family: 'Montserrat';
+    src: 
+         url('C:/Users/ROGUE1/Documents/apprendrecode/formation salesforce OC/projet 6/site web/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight : normal;
+    font-style : normal
+}
+
+body {
+  text-align: center;
+  margin: auto;
+  font-family: "Bubblegum Sans";
+  padding: 10px;
+}
+
+
+
+.form-group .form-label {
+  display: block;
+}
+
+hr {
+  border-top: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#content {
+  border-top: 2px solid #e2e2e2;
+  margin-top: 10px;
+  color: black !important;
+  opacity: 1;
+}
+
+.btn-add {
+
+  @include btn($primary-color);
+
+}
+
+
+.btn-search {
+  @include btn($primary-color);
+
+}
+
+
+.btn-cancel {
+  @include btn($second-color);
+
+}
+
+
+.alert-success {
+
+  @include message($primary-color);
+
+}
+
+.alert-danger {
+
+  @include message($second-color);
+}
+
+
+.title {
+  padding-top: 1%;
+	text-align: center;
+	border: 3px rgb(238, 237, 237);
+	height: 40px;
+	box-shadow: 0 4px 2px -2px rgb(209, 209, 209);
+	background-color: rgb(238, 237, 237);
+  font-weight: normal;
+	font-family: 'Montserrat';
+	font-size: 1.5em;
+  background-color: #eff0f4;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+  text-align: left !important;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  width: 40%;
+  margin: auto;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 40%;
+  margin: 10px;
+  padding: 0;
+  border: 2px ridge #ab9996;
+  text-align: center;
+}
+
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.card img {
+  width: 150px;
+  height: 190px;
+  padding-bottom: 10px;
+}
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+}
+.card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-title {
+  display: inline-block;
+  width: 90%;
+  overflow: auto;
+  height: 7em;
+}
+
+.card-deck {
+  padding: 0px;
+  margin: 0 auto;
+}
+.card-deck .card {
+  margin: 5px auto;
+}
+
+
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .card-title {
+    min-height: 0px;
+  }
+  .card img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+
+
+  .card-deck {
+    width: 100%;
+  }
+  .card-deck .card {
+    margin: 0 0;
+  }
+
+  .card {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .card:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 765px) and (max-width: 1024px) {
+  .card {
+    font-size: 14px;
+  }
+  .card img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .card-title {
+    min-height: 2em;
+    font-size: 16px;
+  }
+
+  .card-body {
+    padding-bottom: 0rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+  }
+
+  .h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
