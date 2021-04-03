@@ -95,16 +95,14 @@ hr {
 	border: 3px rgb(238, 237, 237);
 	height: 40px;
 	box-shadow: 0 4px 2px -2px rgb(209, 209, 209);
-	background-color: rgb(238, 237, 237);
   font-weight: normal;
 	font-family: 'Montserrat';
 	font-size: 1.5em;
   background-color: #eff0f4;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .form-label {
-  text-align: left !important;
+  text-align: left ;
   margin-top: 0.5rem;
 }
 
