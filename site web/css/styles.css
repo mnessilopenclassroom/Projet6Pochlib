@@ -2,7 +2,7 @@
 {
     font-family: 'Montserrat';
     src: 
-         url('C:/Users/ROGUE1/Documents/apprendrecode/formation salesforce OC/projet 6/site web/fonts/Montserrat-Regular.ttf') format('truetype');
+         url('fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight : normal;
     font-style : normal
 }
@@ -38,7 +38,7 @@ hr {
 #content {
   border-top: 2px solid #e2e2e2;
   margin-top: 10px;
-  color: black !important;
+  color: black ;
   opacity: 1;
 }
 
@@ -95,10 +95,12 @@ hr {
 	border: 3px rgb(238, 237, 237);
 	height: 40px;
 	box-shadow: 0 4px 2px -2px rgb(209, 209, 209);
+	background-color: rgb(238, 237, 237);
   font-weight: normal;
 	font-family: 'Montserrat';
 	font-size: 1.5em;
   background-color: #eff0f4;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .form-label {
@@ -108,11 +110,23 @@ hr {
 
 .form-group .form-label {
   display: block;
+  text-align: left;
+}
+
+.form-control{
+  width: 98%;
 }
 
 .btn {
-  width: 40%;
+  width: 200px;
   margin: auto;
+}
+
+.btn2 {
+  text-align: left;
+}
+.btn3 {
+  text-align: left;
 }
 
 .card {
@@ -124,6 +138,7 @@ hr {
   padding: 0;
   border: 2px ridge #ab9996;
   text-align: center;
+  background-color: rgb(224, 224, 224);
 }
 
 
@@ -165,7 +180,7 @@ hr {
 
 
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
+@media (max-width: 640px) {
 
   .card-title {
     min-height: 0px;
@@ -177,7 +192,7 @@ hr {
   }
 
   .card {
-    max-width: 100%;
+    width: 90%;
     height: auto;
   }
 }

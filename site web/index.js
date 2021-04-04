@@ -52,14 +52,14 @@ function addB() {
       <label class="row-s-3 form-label" for="title">Titre du Livre</label><br></br>
 
     
-      <input class="row-s-8 form-control" type="text" name="title" id="title" placeholder="Titre" size="40%"><br></br>
+      <input class="row-s-8 form-control" type="text" name="title" id="title" placeholder="Titre" ><br></br>
     
     
       <label class="row-s-3 form-label" for="author">Auteur</label><br></br>
     
     
   
-      <input class="row-s-8 form-control" type="text" name="author" id="author" placeholder="Auteur" size="40%> <br></br>
+      <input class="row-s-8 form-control" type="text" name="author" id="author" placeholder="Auteur" > <br></br>
     
     <div class="btn2"><br></br>
     <button onclick="searchB()" type="button" class="btn-search btn">Rechercher</button>
